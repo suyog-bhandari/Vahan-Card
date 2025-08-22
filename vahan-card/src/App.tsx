@@ -1,8 +1,12 @@
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+
 function App() {
 
   return (
     <>
-    <h1>vahan card</h1>
+      <Navbar/>
+      <Footer/>
     </>
   )
 }
