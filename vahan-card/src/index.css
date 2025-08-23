@@ -12,9 +12,22 @@
   --color-green-bg:#EAFBEF;
   --color-red:#FF4130;
   --color-text-grey:#9EA5AB;
-  
+
+
+  --font-xs:1.2rem;
+  --font-sm:1.4rem;
+  --font-base:1.6rem;
+  --font-lg:2rem;
 }
 
-body{
-  background-color: #000000;
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }

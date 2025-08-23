@@ -1,15 +1,15 @@
 function Navbar(){
     return(
         <>
-        <header className="header flex  items-center">
+        <header className="flex items-center">
             <img src="src/assets/logo.png" alt="Logo" className="logo" />
-            <nav className="nav-links">
-                <ul className="flex flex-row gap-8 items-center" >
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">How it works</a></li>
-                    <li><a href="/">Plans & Pricing</a></li>
-                    <li><a href="/">My Account</a></li>
-                    <li><a href="/">Get a Card</a></li>
+            <nav>
+                <ul className="flex flex-row items-center list-none gap-8" >
+                    <li><a href="/" className="no-underline">Home</a></li>
+                    <li><a href="/" className="no-underline">How it works</a></li>
+                    <li><a href="/" className="no-underline">Plans & Pricing</a></li>
+                    <li><a href="/" className="no-underline">My Account</a></li>
+                    <li><a href="/" className="no-underline">Get a Card</a></li>
                 </ul>
             </nav>
 
