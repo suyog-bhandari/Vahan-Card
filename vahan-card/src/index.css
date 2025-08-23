@@ -70,8 +70,7 @@ li{
 .nav ul{
     display: flex;
     flex-direction: row;
-    gap: 2.8rem;
-    
+    gap: 2.8rem;   
 }
 
 .nav ul li a{
@@ -80,6 +79,7 @@ li{
     font-weight:400;
     line-height: 1.7;
     color: var(--color-white);
+    transition: 0.2s ease-in;
 }
 
 .nav ul li a:hover{
@@ -98,6 +98,7 @@ li{
     line-height: 1.7;
     border: none;
     background: none;
+    transition: 0.2s ease-in;
 }
 
 .btn-primary{
@@ -105,9 +106,41 @@ li{
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 2rem 3.2rem;
-    transition: 0.2s ease-in;
+}
+
+.btn-secondary{
+    color: var(--color-white);
+}
+
+.btn-secondary:hover{
+    color: var(--color-primary);
 }
 
 .btn-primary:hover{
     background-color: var(--color-secondary);
+}
+
+.hamburger{
+    display: none;
+    margin-left: auto;
+}
+
+@media(max-width:1024px){
+    .hamburger{
+        display: block;
+    }
+
+    .header .buttons{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+@media(max-width:1090px){
+    .btn-secondary{
+        display: none;
+    }
 }
