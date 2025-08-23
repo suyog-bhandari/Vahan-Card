@@ -14,8 +14,8 @@ function Navbar(){
             </nav>
 
             <div className="buttons">
-                <button className="btn"> <img src="./assets/warning-icon.png" alt="" className="btn-icon" /> Scam Alert</button>
-                <button className="btn">Vahan Card for web</button>
+                <button className="btn btn-secondary"> <img src="./assets/warning-icon.png" alt="" className="btn-icon" /> Scam Alert</button>
+                <button className="btn btn-primary">Vahan Card for web</button>
             </div>
         </header>       
         </>
