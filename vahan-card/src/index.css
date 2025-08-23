@@ -1,33 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root{
-  --color-primary:#00A82D;
-  --color-secondary:#038024;
-  --color-black:#000000;
-  --color-white:#ffffff;
-  --color-light-bg:#F6FFF9;
-  --color-light-bg-2:#F1FFF5;
-  --color-green-bg:#EAFBEF;
-  --color-red:#FF4130;
-  --color-text-grey:#9EA5AB;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-  --font-xs:1.2rem;
-  --font-sm:1.4rem;
-  --font-base:1.6rem;
-  --font-lg:2rem;
+:root {
+  --color-primary: #00A82D;
+  --color-secondary: #038024;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-bg: #F6FFF9;
+  --color-light-bg-2: #F1FFF5;
+  --color-green-bg: #EAFBEF;
+  --color-red: #FF4130;
+  --color-text-grey: #9EA5AB;
+
+  --font-xs: 1.2rem;
+  --font-sm: 1.4rem;
+  --font-base: 1.6rem;
+  --font-lg: 2rem;
+  --font-xl: 2.6rem;
+  --font-2xl: 4rem;
+  --font-3xl: 4.8rem;
+  --font-4xl: 6rem;
 }
 
 *,
-*::after,
-*::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* ******************** */
+/* ******HEADER******* */
+/* ******************** */
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size:var(--font-sm);
+    font-weight:600;
+    line-height: 1.7;
+}
+
+.header .buttons{
+    margin-left:auto;
 }
