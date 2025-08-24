@@ -53,6 +53,23 @@ function Home(){
                     </div>
                 </div>
             </section>
+
+            <section className="trending">
+                <div className="container">
+                    <div className="trending-inner">
+                        <div className="trending-text">
+                            <h4>Trending</h4>
+                            <h2>Introducing Vahan Card for Easy Travel Payments<span className="green-dot">.</span></h2>
+                            <p className="paragraph">Experience a new way of texting with Truecaller on your desktop. Getting started is as easy as scanning a QR code. With just a few clicks, you'll be up and running.</p>
+                            <button>Learn More</button>
+                        </div>
+
+                        <div className="trending-image">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
             
         </main>
     )

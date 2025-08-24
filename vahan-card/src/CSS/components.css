@@ -70,6 +70,22 @@
 
 
 /* ******************** */
+/* ******BASICS******* */
+/* ******************** */
+
+.green-dot{
+    color: var(--color-primary);
+}
+
+.paragraph{
+    font-size: var(--font-base);
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+
+/* ******************** */
 /* ******CARD******* */
 /* ******************** */
 
