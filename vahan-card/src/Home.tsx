@@ -1,4 +1,4 @@
-import Card from "./Components.jsx"
+import Card from "./Components.js"
 
 function Home(){
     const cardsData=[
