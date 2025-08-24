@@ -1,4 +1,4 @@
-import {Card, IntroducingCards} from "./Components.js"
+import {Card, IntroducingCards, Highlights} from "./Components.js"
 
 function Home(){
     const cardsData=[
@@ -37,6 +37,24 @@ function Home(){
             description:"Enjoy discounts and save on every ride. Vahan Card makes your daily commute lighter on your wallet.",
             image:"/src/assets/credit-card.png"
         },    
+    ]
+
+
+    const HighlightCards = [
+        {
+            subheadline:"SMART TRAVEL",
+            heading: "Introducing Vahan Card for Daily Commute.",
+            description:"No more searching for loose change—just tap your card and go. Vahan Card makes commuting in buses and local vehicles faster, safer, and stress-free.",
+            button:"Get Started Today",
+            image: "/src/assets/girl-in-a-bus.png"
+        },
+        {
+            subheadline:"CASHLESS RIDES",
+            heading: "Seamless Payments with Vahan Card.",
+            description:"Load once, travel everywhere. With instant payments and student discounts, your daily rides are now smoother and lighter on your wallet.",
+            button:"Apply for a Vahan Card",
+            image: "/src/assets/girl-paying-with-card.png"
+        }
     ]
     return(
         <main>
@@ -77,7 +95,7 @@ function Home(){
                 <div className="container">
                     <div className="trending-inner">
                         <div className="trending-text">
-                            <h4>Trending</h4>
+                            <h4 className="sub-heading-text">Trending</h4>
                             <h2>Introducing Vahan Card for Easy Travel Payments<span className="green-dot">.</span></h2>
                             <p className="paragraph">Experience a new way of texting with Truecaller on your desktop. Getting started is as easy as scanning a QR code. With just a few clicks, you'll be up and running.</p>
                             <button>Learn More</button>
@@ -95,11 +113,23 @@ function Home(){
                     <div className="introducting-cards">
                         {
                             introducingData.map((introducing,index)=>(
-                                <IntroducingCards key={index} title={introducing.title} description={introducing.description} image={introducing.image}/>
+                                <IntroducingCards key={index} title={introducing.title} description={introducing.description} image={introducing.image} />
                             ))
                         }
                     </div>
                 </div>
+            </section>
+
+            <section className="highlights">
+                <div className="container">
+                    <div className="highlights-container">
+                        {HighlightCards.map((highlight,index)=>(
+                            <Highlights key={index} subheadline={highlight.subheadline} heading={highlight.heading} button={highlight.button} image={highlight.image} description={highlight.description} reverse={index % 2 !== 0}/>
+                        ))
+                        }
+                    </div>
+                </div>
+
             </section>
         </main>
     )

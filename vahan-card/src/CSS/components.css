@@ -84,6 +84,14 @@
     color: var(--color-black);
 }
 
+.sub-heading-text{
+    font-size: var(--font-lg);
+    text-transform: uppercase;
+    line-height: 2.3rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 2.6rem;
+}
 
 /* ******************** */
 /* ******CARD******* */
@@ -143,4 +151,46 @@
 
 .paragraph-grey{
     color: var(--color-text-grey-2);
+}
+
+
+/* ******************** */
+/* ******HIGHLIGHTS******* */
+/* ******************** */
+
+.highlight-text h2{
+    font-size:var(--font-3xl) ;
+    font-weight: 700;
+    line-height: 5.8rem;
+    color: var(--color-black);
+    margin-bottom: 1.4rem;
+}
+
+.highlight-text{
+    max-width: 58rem;
+}
+
+.highlight-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.highlight-text button{
+    border-radius: 9999px;
+    color: var(--color-primary);
+    padding: 2rem 3.2rem;
+    border: 2px solid var(--color-primary);
+}
+
+.highlight-text button:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.highlight-text p{
+    margin-bottom: 2rem;
 }
