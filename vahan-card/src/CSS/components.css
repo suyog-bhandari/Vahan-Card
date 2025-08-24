@@ -114,3 +114,33 @@
     line-height: 24px;
     text-align: center;
 }
+
+
+
+/* ******************** */
+/* ******INTRODUCING******* */
+/* ******************** */
+
+.introducing-container{
+    background-color: var(--color-light-bg-2);
+    padding: 5.2rem 2.8rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.10);
+}
+
+.introducing-container img{
+    max-width: 6.4rem;
+    margin-bottom: 4rem;
+}
+
+.introducing-container h3{
+    font-size: var(--font-xl);
+    line-height: 3.6rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 2.2rem;
+}
+
+.paragraph-grey{
+    color: var(--color-text-grey-2);
+}

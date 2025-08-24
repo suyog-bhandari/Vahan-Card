@@ -108,3 +108,23 @@
 .trending-image img{
     max-width: 58rem;
 }
+
+
+
+
+
+/* ******************** */
+/* *****INTRODUCING***** */
+/* ******************** */
+
+.introducing{
+    padding-bottom: 9rem;
+    background-color: var(--color-white);
+}
+
+.introducting-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 7.4rem;
+}
+

@@ -1,10 +1,9 @@
-import Card from "./Components.js"
-import IntroducingCards from "./Components.js"
+import {Card, IntroducingCards} from "./Components.js"
 
 function Home(){
     const cardsData=[
         {title:"Enhance Convenience",
-        description:"Offer a hassle-free way to manage travel expenses using the Bahan Card.",
+        description:"Offer a hassle-free way to manage travel expenses using the Vahan Card.",
         image:"/src/assets/payment-method.png"},
 
         {title:"Save More",
@@ -24,26 +23,20 @@ function Home(){
         {
             title:"Quick & Easy Travel",
             description:"Say goodbye to cash! Pay instantly on buses and local rides with just a tap of your Vahan Card.",
-            image:""
+            image:"/src/assets/credit-card.png"
         },
 
          {
             title:"Hassle-Free Commute",
             description:"Load your card once and travel worry-free. No queues, no delays—just smooth journeys every day.",
-            image:""
+            image:"/src/assets/credit-card.png"
         },
 
          {
             title:"Smart Student Savings",
             description:"Enjoy discounts and save on every ride. Vahan Card makes your daily commute lighter on your wallet.",
-            image:""
-        },
-
-         {
-            title:"Always On The Move",
-            description:"From buses to local vehicles, Vahan Card keeps you moving fast. Tap, pay, and go—simple as that.",
-            image:""
-        }
+            image:"/src/assets/credit-card.png"
+        },    
     ]
     return(
         <main>
