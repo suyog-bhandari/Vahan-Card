@@ -1,0 +1,72 @@
+/* ******************** */
+/* ******BUTTONS******* */
+/* ******************** */
+
+.btn{
+    font-size:var(--font-sm);
+    font-weight: 600;
+    line-height: 1.7;
+    border: none;
+    background: none;
+    transition: 0.2s ease-in;
+}
+
+.btn-primary,
+.btn-tertiary{
+    border-radius: 9999px;
+    color: var(--color-white);
+    padding: 2rem 3.2rem;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+}
+
+.btn-tertiary{
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.btn-tertiary:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-secondary{
+    color: var(--color-white);
+}
+
+.btn-secondary:hover{
+    color: var(--color-primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--color-secondary);
+}
+
+@media(max-width:1024px){
+    .header .buttons{
+        display: none;
+    }
+
+    .mobile-buttons{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.4rem;
+    }
+
+    .mobile-secondary{
+        padding: 1.5rem 2rem;
+        border: 1px solid #fff;
+        border-radius: 9999px;
+    }
+
+    .btn-primary{
+        padding: 1.5rem 2rem;
+    }
+}
+
+
+

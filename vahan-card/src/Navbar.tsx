@@ -13,7 +13,9 @@ function Navbar(){
 
     return(
         <>
-        <header className="header">
+          <div className="container">
+
+            <header className="header">
             <img src="src/assets/logo.png" alt="Logo" className="logo" />
             <nav className="nav">
                 <ul className="nav-list" >
@@ -47,7 +49,8 @@ function Navbar(){
           <line x1="3" y1="18" x2="21" y2="18" />
         </svg>
             </div>
-        </header>   
+        </header>  
+
 
 
         <div className={`side-nav ${navOpen ? "open":""}`}>
@@ -81,7 +84,8 @@ function Navbar(){
                 <button className="btn btn-secondary mobile-secondary"> <img src="./assets/warning-icon.png" alt="" className="btn-icon" /> Scam Alert</button>
                 <button className="btn btn-primary">Vahan Card for web</button>
             </div>
-        </div>    
+        </div>
+     </div>    
         </>
     )
 }

@@ -1,0 +1,54 @@
+/* ******************** */
+/* ******HERO******* */
+/* ******************** */
+
+.main-buttons{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.hero{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: 
+    linear-gradient(rgba(10, 10, 10, 0.72), rgba(10, 10, 10, 0.72)), 
+    url("/src/assets/Smiling-woman.webp");
+    background-size: cover;
+    background-position: center;
+    margin-top: -10rem;
+    overflow: hidden;
+}
+
+.hero h1{
+    font-size: var(--font-4xl);
+    color: var(--color-white);
+    max-width: 640px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 3.2rem;
+}
+
+.inner-container{
+    width: 190rem;
+}
+
+
+/* ******************** */
+/* *****WHAT WE DO***** */
+/* ******************** */
+
+.what-we-do{
+    background-color: var(--color-light-bg);
+    padding: 8rem 0;
+}
+
+.what-we-do h2{
+    text-align: center;
+    font-size: var(--font-2xl);
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--color-black);
+}
