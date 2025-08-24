@@ -1,4 +1,5 @@
 import Card from "./Components.js"
+import IntroducingCards from "./Components.js"
 
 function Home(){
     const cardsData=[
@@ -17,7 +18,32 @@ function Home(){
         {title:"Track Expenses",
         description:"Monitor your travel spending easily with clear and transparent transaction history.",
         image:"/src/assets/payment-method.png"},
+    ]
 
+    const introducingData=[
+        {
+            title:"Quick & Easy Travel",
+            description:"Say goodbye to cash! Pay instantly on buses and local rides with just a tap of your Vahan Card.",
+            image:""
+        },
+
+         {
+            title:"Hassle-Free Commute",
+            description:"Load your card once and travel worry-free. No queues, no delays—just smooth journeys every day.",
+            image:""
+        },
+
+         {
+            title:"Smart Student Savings",
+            description:"Enjoy discounts and save on every ride. Vahan Card makes your daily commute lighter on your wallet.",
+            image:""
+        },
+
+         {
+            title:"Always On The Move",
+            description:"From buses to local vehicles, Vahan Card keeps you moving fast. Tap, pay, and go—simple as that.",
+            image:""
+        }
     ]
     return(
         <main>
@@ -65,12 +91,23 @@ function Home(){
                         </div>
 
                         <div className="trending-image">
-
+                            <img src="/src/assets/Smiling-woman-phone.png" alt="Smiling woman with card" />
                         </div>
                     </div>
                 </div>
             </section>
             
+            <section className="introducing">
+                <div className="container">
+                    <div className="introducting-cards">
+                        {
+                            introducingData.map((introducing,index)=>(
+                                <IntroducingCards key={index} title={introducing.title} description={introducing.description} image={introducing.image}/>
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }

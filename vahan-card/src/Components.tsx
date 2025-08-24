@@ -1,4 +1,4 @@
-function Card({ title, description, image}) {
+export function Card({ title, description, image}) {
   return (
     <div className="icon-card">
       <img src={image} alt={title} />
@@ -8,4 +8,14 @@ function Card({ title, description, image}) {
   );
 }
 
-export default Card;
+
+
+export function IntroducingCards({title, description, image}){
+  return(
+    <div className="introducing-container">
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+}

@@ -75,6 +75,7 @@
     font-weight: 700;
     line-height: 5.8rem;
     color: var(--color-black);
+    margin-bottom: 1.4rem;
 }
 
 .trending-text h4{
@@ -83,4 +84,27 @@
     line-height: 2.3rem;
     font-weight: 600;
     color: var(--color-primary);
+    margin-bottom: 2.6rem;
+}
+
+.trending-text p{
+    margin-bottom: 2.2rem;
+}
+
+.trending-text button{
+    font-size: var(--font-sm) ;
+    line-height: 2.4rem;
+    color: var(--color-primary);
+    background-color: transparent;
+    border: none;
+}
+
+.trending-inner{
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+}
+
+.trending-image img{
+    max-width: 58rem;
 }
