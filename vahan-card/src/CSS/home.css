@@ -120,6 +120,8 @@
 /* ******************** */
 .highlights{
     background-color: var(--color-white);
+    padding-bottom: 9rem;
+    padding-top:4rem ;
 }
 
 .highlights-container{
@@ -127,5 +129,25 @@
     justify-content: space-between;
     flex-direction: column;
     gap: 6rem;
+}
+
+
+
+/* ******************** */
+/* *****BLOGS***** */
+/* ******************** */
+.blogs{
+    background-color: var(--color-green-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem 0;
+}
+
+.blog-inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    max-width: 95.5rem;
 }
 

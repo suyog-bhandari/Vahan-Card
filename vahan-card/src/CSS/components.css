@@ -194,3 +194,13 @@
 .highlight-text p{
     margin-bottom: 2rem;
 }
+
+
+
+/* ******************** */
+/* ******BLOGS******* */
+/* ******************** */
+
+.blog-card{
+    background-color:var() ;
+}
