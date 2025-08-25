@@ -1,4 +1,4 @@
-import {Card, IntroducingCards, Highlights} from "./Components.js"
+import {Card, IntroducingCards, Highlights, Blogs} from "./Components.js"
 
 function Home(){
     const cardsData=[
@@ -56,6 +56,32 @@ function Home(){
             image: "/src/assets/girl-paying-with-card.png"
         }
     ]
+
+
+    const BlogsData = [
+        {
+            subheading:"Scam Alert",
+            image:"/src/assets/scam.png",
+            heading:"Back to School Scams: What Parents and Students Need to...",
+            pdate:"Aug 22, 2024",
+            rtime: "3 min read"
+        },
+        {
+            subheading:"Scam Alert",
+            image:"/src/assets/scam.png",
+            heading:"Back to School Scams: What Parents and Students Need to...",
+            pdate:"Aug 22, 2024",
+            rtime: "3 min read"
+        },
+        {
+            subheading:"Scam Alert",
+            image:"/src/assets/scam.png",
+            heading:"Back to School Scams: What Parents and Students Need to...",
+            pdate:"Aug 22, 2024",
+            rtime: "3 min read"
+        }
+    ]
+
     return(
         <main>
             <section className="hero">
@@ -133,7 +159,15 @@ function Home(){
 
 
             <section className="blogs">
-
+                <div className="container">
+                    <div className="blog-inner">
+                        {
+                            BlogsData.map((blog,index)=>(
+                                <Blogs key={index} subheading={blog.subheading} image={blog.image} heading={blog.heading} date={blog.pdate} time={blog.rtime}/>
+                            ))
+                        }
+                    </div>
+                </div>
             </section>
         </main>
     )
