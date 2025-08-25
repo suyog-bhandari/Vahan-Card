@@ -34,3 +34,21 @@ export function Highlights({ subheadline, heading, description, button, image, r
     </div>
   );
 }
+
+
+export function Blogs({image, subheading, heading, date, time}){
+  return (
+    <div className={`highlight-card ${reverse ? "reverse": ""}`}>
+      <div className="highlight-text">
+        <h4 className="sub-heading-text">{subheadline}</h4>
+        <h2>{heading}</h2>
+        <p className="paragraph paragraph-grey">{description}</p>
+        <button className="btn">{button}</button>
+      </div>
+
+      <div className="highlight-image">
+        <img src={image} alt={heading} />
+      </div>
+    </div>
+  )
+}

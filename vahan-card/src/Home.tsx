@@ -129,6 +129,10 @@ function Home(){
                         }
                     </div>
                 </div>
+            </section>
+
+
+            <section className="blogs">
 
             </section>
         </main>
