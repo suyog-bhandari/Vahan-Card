@@ -202,5 +202,14 @@
 /* ******************** */
 
 .blog-card{
-    background-color:var() ;
+    background-color:var(--color-white) ;
+    border-radius: 2rem;
+}
+
+.blog-top{
+    padding: 2rem ;
+} 
+
+.blog-bottom{
+    padding: 2.4rem;
 }

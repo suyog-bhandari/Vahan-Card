@@ -1,3 +1,5 @@
+import scamImage from "../src/assets/scam.png";
+
 export function Card({ title, description, image}) {
   return (
     <div className="icon-card">
@@ -40,12 +42,20 @@ export function Blogs({image, subheading, heading, date, time}){
   return (
     <div className={"blog-card"}>
       <div className="blogs-text">
-        <h4 className="sub-heading-text">{subheading}</h4>
-        <img src="" alt="" />
-        <h2>{heading}</h2>
-        <div className="blog-date">
-          <span>{date}</span>
-          <span>{time}</span>
+
+        <div className="blog-top">
+            <h4 className="sub-heading-blog">{subheading}</h4>
+        </div>
+        
+        <img src={image} alt={heading} />
+
+        <div className="blog-bottom">
+            <h2>{heading}</h2>
+            <div className="blog-date">
+            <span>{date}</span>
+            <span>{time}</span>
+        </div>
+        
         </div>
       </div>
     </div>

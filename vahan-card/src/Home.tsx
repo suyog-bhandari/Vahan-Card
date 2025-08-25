@@ -1,4 +1,5 @@
 import {Card, IntroducingCards, Highlights, Blogs} from "./Components.js"
+import scamImage from "./assets/scam.png";
 
 function Home(){
     const cardsData=[
@@ -61,21 +62,21 @@ function Home(){
     const BlogsData = [
         {
             subheading:"Scam Alert",
-            image:"/src/assets/scam.png",
+            image:scamImage,
             heading:"Back to School Scams: What Parents and Students Need to...",
             pdate:"Aug 22, 2024",
             rtime: "3 min read"
         },
         {
             subheading:"Scam Alert",
-            image:"/src/assets/scam.png",
+            image:scamImage,
             heading:"Back to School Scams: What Parents and Students Need to...",
             pdate:"Aug 22, 2024",
             rtime: "3 min read"
         },
         {
             subheading:"Scam Alert",
-            image:"/src/assets/scam.png",
+            image:scamImage,
             heading:"Back to School Scams: What Parents and Students Need to...",
             pdate:"Aug 22, 2024",
             rtime: "3 min read"
